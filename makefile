@@ -1,16 +1,7 @@
-audioprocessor: main.cpp wav.o echo.o limiter.o noisegate.o
-	g++ -std=c++11 main.cpp wav.o echo.o limiter.o noisegate.o -o audioprocessor
+audioprocessor: main.cpp wav.o
+	g++ -std=c++11 main.cpp wav.o -o audioprocessor
 
-echo.o: echo.cpp echo.h 
-	g++ -c -std=c++11 echo.cpp
-
-limiter.o: limiter.cpp limiter.h
-	g++ -c -std=c++11 limiter.cpp
-
-noisegate.o: noisegate.cpp noisegate.h
-	g++ -c -std=c++11 noisegate.cpp
-
-wav.o: wav.cpp wav.h Waveheader.h
+wav.o: wav.cpp wav.h
 	g++ -c -std=c++11 wav.cpp
 
 clean:
