@@ -11,7 +11,7 @@ noisegate.o: noisegate.cpp noisegate.h
 	g++ -c -std=c++11 noisegate.cpp
 
 wav.o: Wav.cpp Wav.h Waveheader.h
-	g++ -c -std=c++11 Wav.cpp
+	g++ -c -std=c++11 Wav.cpp Waveheader.h
 
 clean:
 	rm *.o audioprocessor
