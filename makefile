@@ -1,5 +1,5 @@
 audioprocessor: main.cpp wav.o echo.o limiter.o noisegate.o
-	g++ -std=c++11 main.cpp wav.o echo.o limiter.o noisegate.o -o audioprocessor
+	g++ -std=c++11 -o audioprocessor main.cpp wav.o echo.o limiter.o noisegate.o 
 
 echo.o: echo.cpp echo.h 
 	g++ -c -std=c++11 echo.cpp
