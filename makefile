@@ -10,8 +10,8 @@ limiter.o: limiter.cpp limiter.h
 noisegate.o: noisegate.cpp noisegate.h
 	g++ -c -std=c++11 noisegate.cpp
 
-wav.o: Wav.cpp Wav.h Waveheader.h
-	g++ -c -std=c++11 Wav.cpp Waveheader.h
+wav.o: Wav.cpp Wav.h WaveHeader.h
+	g++ -c -std=c++11 Wav.cpp WaveHeader.h
 
 clean:
 	rm *.o audioprocessor
